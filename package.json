@@ -1,0 +1,39 @@
+{
+  "name": "web-client",
+  "version": "0.0.1",
+  "private": true,
+  "proxy": "https://localhost:7212",
+  "dependencies": {
+    "@fontsource/inter": "^5.0.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.23",
+    "@types/react-dom": "^18.2.8",
+    "@vitejs/plugin-react": "^4.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vite-plugin-mkcert": "^1.16.0",
+    "vite-plugin-svgr": "^4.1.0",
+    "vite-tsconfig-paths": "^4.2.1"
+  },
+  "scripts": {
+    "start": "vite --force",
+    "build": "tsc && vite build --mode development --emptyOutDir",
+    "format": "prettier --write \"*/**/*.{ts,tsx,md,json,html,css}\""
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "browserslist": {
+    "production": [
+      "last 10 chrome version",
+      "last 10 firefox version"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version"
+    ]
+  }
+}

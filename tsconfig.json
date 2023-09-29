@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["vite/client", "vite-plugin-svgr/client"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@store/*": ["src/app/store/*"],
+      "@router": ["src/app/router"],
+      "@api/clients": ["./src/app/api/clients"],
+      "@api": ["./src/app/api"],
+      "@layout/*": ["./src/layout/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@features/*": ["./src/features/*"],
+      "@utility/*": ["./src/utility/*"],
+      "@types": ["./src/app/types"],
+      "@settings": ["./src/app/settings"],
+      "@auth/requests": ["./src/app/auth/requests"],
+      "@auth/client": ["./src/app/auth/client"]
+    }
+  },
+  "include": ["src", "vite.config.ts"]
+}
